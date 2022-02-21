@@ -13,7 +13,13 @@ services:
               source: ./data
               target: /root/data
 
+            - type: bind
+              source: ./img
+              target: /root/img
+
         environment:
             - DISPLAY=${DISPLAY}
+
+        privileged: true
 
         tty: true
