@@ -15,6 +15,6 @@ RUN apt-get update && apt-get install -y \
         python3-pip \
         python3-tk
 
-COPY ./etc/root/ /root/
+COPY ./misc/root/ /root/
 
 RUN pip3 install --upgrade pip && pip3 install -r /root/requirements.txt
