@@ -17,16 +17,6 @@ services:
               source: ./img
               target: /root/img
 
-            - type: bind
-              source: /etc/passwd
-              target: /etc/passwd
-              read_only: true
-
-            - type: bind
-              source: /etc/group
-              target: /etc/group
-              read_only: true
-
         environment:
             - DISPLAY=${DISPLAY}
 
